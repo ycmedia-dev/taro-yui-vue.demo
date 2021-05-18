@@ -1,0 +1,25 @@
+.y-input-box {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  height: 100%;
+  .placeholderClass {
+    color: #b2b2b2;
+    height: 100%;
+    line-height: 100%;
+  }
+  .input,.input input {
+    flex: 1;
+    height: 100%;
+    line-height: 100%;
+  }
+  .delete-icon-view {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    .delete-icon {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}

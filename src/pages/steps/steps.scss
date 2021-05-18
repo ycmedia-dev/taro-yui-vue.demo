@@ -1,0 +1,47 @@
+.container{
+    padding: 40px;
+  .order_success {
+    .step-icon {
+      background: #5cbb7a;
+    }
+    .step-line_inner {
+      background: #5cbb7a;
+    }
+    .step-title {
+      color: #5cbb7a;
+    }
+  }
+  .order_error {
+    .step-icon {
+      background: red;
+    }
+    .step-line_inner {
+      background: red;
+    }
+    .step-title {
+      color: red;
+    }
+  }
+  .order_process {
+    .step-icon {
+      background: #3388ff;
+    }
+    .step-line_inner {
+      background: #3388ff;
+    }
+    .step-title {
+      color: #3388ff;
+    }
+  }
+  .order_default {
+    .step-icon {
+      background: #c0c4cc;
+    }
+    .step-line_inner {
+      background: #c0c4cc;
+    }
+    .step-title {
+      color: #c0c4cc;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.y-form-item-input-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  .text {
+    text-align: right;
+  }
+  .y-form-item-input {
+    flex: 1;
+    height: 104px;
+    line-height: 104px;
+    text-align: right;
+    input {
+      height: 104px;
+      line-height: 104px;
+    }
+    &-placeholder {
+      line-height: 104px;
+      text-align: right;
+      color: #b2b2b2;
+    }
+  }
+}
+@media screen and (min-width: 480px) {
+  .y-form-item-input-wrapper {
+    .y-form-item-input {
+      height: #{'50PX'};
+      line-height: #{'50PX'};
+      input {
+        height: #{'50PX'};
+        line-height: #{'50PX'};
+      }
+      &-placeholder {
+        line-height: #{'50PX'};
+      }
+    }
+  }
+}

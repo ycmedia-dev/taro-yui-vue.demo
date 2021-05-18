@@ -1,0 +1,46 @@
+@import "./assets/css/common.scss";
+.y-textarea {
+  width: 100%;
+  .text {
+    padding-bottom: 10px;
+    line-height: 1.5;
+  }
+
+  .box {
+    width: 100%;
+    font-size: 24px;
+    line-height: 35px;
+    min-height: 94px;
+    padding: 10px;
+    text-align: left;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border: 2px solid #999;
+  }
+
+  .quantity {
+    width: 100%;
+    text-align: right;
+    font-size: 28px;
+    color: #999;
+  }
+}
+@media screen and (min-width: 480px) {
+  .y-textarea {
+    .text {
+      padding-bottom: #{'5PX'};
+    }
+    .box {
+      font-size: #{'12PX'};
+      line-height: #{'17PX'};
+      min-height: #{'46PX'};
+      padding: #{'5PX'};
+      border-radius: #{'5PX'};
+      border: #{'1PX'} solid #999;
+    }
+  
+    .quantity {
+      font-size: #{'13PX'};
+    }
+  }
+}

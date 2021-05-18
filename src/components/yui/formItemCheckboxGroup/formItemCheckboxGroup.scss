@@ -1,0 +1,20 @@
+@import "./assets/css/common.scss";
+.y-form-item-checkbox-group {
+    &.y-checkbox-group {
+        .y-checkbox {
+            margin-right: 20px;
+        }
+        .y-checkbox.y-checkbox-button {
+            margin-right: 0;
+        }
+    }
+}
+@media screen and (min-width: 480px) {
+    .y-form-item-checkbox-group {
+        &.y-checkbox-group {
+            .y-checkbox {
+                margin-right: #{'10PX'};
+            }
+        }
+    }
+}

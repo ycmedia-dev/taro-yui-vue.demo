@@ -1,0 +1,19 @@
+.kalendar-body {
+  display: flex;
+  flex-wrap: wrap;
+  .quarter-item {
+    width: 25%;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    &.disabled {
+      color: #BFBFBF;
+    }
+    &.selected {
+      color: #00CC9B;
+    }
+    &.muilti-selected {
+      color: #00CC9B;
+    }
+  }
+}

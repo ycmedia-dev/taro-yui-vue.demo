@@ -1,0 +1,30 @@
+.kalendar-body {
+  display: flex;
+  flex-wrap: wrap;
+  .month-item {
+    cursor: pointer;
+    width: 25%;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    border-bottom: #{'1PX'} solid #EBEBEB;
+    &.disabled {
+      color: #BFBFBF;
+    }
+    &.selected {
+      color: #00CC9B;
+    }
+    &.muilti-selected {
+      color: #00CC9B;
+    }
+  }
+}
+@media screen and (min-width: 480px) {
+  .kalendar-body {
+    .month-item {
+      width: 25%;
+      height: #{'40PX'};
+      line-height: #{'40PX'};
+    }
+  }
+}

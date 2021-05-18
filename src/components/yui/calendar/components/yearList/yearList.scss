@@ -1,0 +1,21 @@
+.kalendar-body {
+  display: flex;
+  flex-wrap: wrap;
+  .year-item {
+    cursor: pointer;
+    width: 20%;
+    height: 80px;
+    line-height: 80px;
+    border-bottom: #{'1PX'} solid #EBEBEB;
+    text-align: center;
+    &.disabled {
+      color: #BFBFBF;
+    }
+    &.selected {
+      color: #00CC9B;
+    }
+    &.muilti-selected {
+      color: #00CC9B;
+    }
+  }
+}

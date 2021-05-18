@@ -1,0 +1,83 @@
+{
+  "miniprogramRoot": "dist/",
+  "projectname": "taro-yui-vue-demo",
+  "description": "组件库示例",
+  "appid": "wx1ff56ebf8fb25ddc",
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": true,
+    "postcss": false,
+    "preloadBackgroundData": false,
+    "minified": false,
+    "newFeature": false,
+    "coverView": true,
+    "nodeModules": false,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": false,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useMultiFrameRuntime": true,
+    "useApiHook": true,
+    "useApiHostProcess": false,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "enableEngineNative": false,
+    "bundle": false,
+    "useIsolateContext": true,
+    "useCompilerModule": true,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "userConfirmedBundleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": false
+  },
+  "compileType": "miniprogram",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/upload/basic/upload",
+          "pathName": "pages/upload/basic/upload",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/upload/multiple/upload",
+          "pathName": "pages/upload/multiple/upload",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/searchBar/multiple/searchBar",
+          "pathName": "pages/searchBar/multiple/searchBar",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/form/form",
+          "pathName": "pages/form/form",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

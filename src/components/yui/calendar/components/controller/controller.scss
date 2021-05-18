@@ -1,0 +1,65 @@
+.kalendar-controller {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 35px;
+  height: 40px;
+  line-height: 40px;
+  color: #595959;
+  font-size: 28px;
+  .day {
+    padding: 0 10px;
+    min-width: 85px;
+  }
+  .prev-year,
+  .prev-month,
+  .next-year,
+  .next-month {
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    height: 40px;
+    margin: 0 10px;
+    color: #000;
+    &.disabled {
+      color: #999;
+    }
+    .arrow {
+      width: 25px;
+      height: 25px;
+    }
+    .arrow-double {
+      width: 35px;
+      height: 35px;
+    }
+  }
+}
+@media screen and (min-width: 480px) {
+  .kalendar-controller {
+    margin-bottom: #{"17PX"};
+    height: #{"20PX"};
+    line-height: #{"20PX"};
+    font-size: #{"14PX"};
+    .day {
+      padding: #{"0 5PX"};
+      min-width: #{"42PX"};
+    }
+    .prev-year,
+    .prev-month,
+    .next-year,
+    .next-month {
+      padding: #{"0 10PX"};
+      height: #{"20PX"};
+      margin: #{"0 5PX"};
+      .arrow {
+        width: #{"12PX"};
+        height: #{"12PX"};
+      }
+      .arrow-double {
+        width: #{"17PX"};
+        height: #{"17PX"};
+      }
+    }
+  }
+}

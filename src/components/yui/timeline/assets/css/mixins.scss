@@ -1,0 +1,57 @@
+@mixin pseudoClass($width, $height, $top, $left, $bgColor) {
+  content: '';
+  position: absolute;
+  left: $left;
+  top: $top;
+  width: $width;
+  height: $height;
+  background: $bgColor;
+}
+
+@mixin ellipsis($display: block, $width: 100%) {
+  display: $display;
+  width: $width;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@mixin multiple-line-ellipsis($line: 3) {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  white-space:normal;
+  word-break:break-all;
+  text-overflow: ellipsis;
+}
+
+@mixin mask($position: fixed, $bg-color: #000, $z-index: 999) {
+  position: $position;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $bg-color;
+  z-index: $z-index;
+}
+
+@mixin align-center() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin iptextarea($height: 166px, $width: 100%, $radius: 10px) {
+  padding: 24px;
+  width: $width;
+  height: $height;
+  line-height: 42px;
+  text-align: left;
+  background: #FBFBFB;
+  border: 2px solid #DEEAF3;
+  border-radius: $radius;
+}

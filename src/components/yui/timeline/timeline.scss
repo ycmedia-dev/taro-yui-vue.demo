@@ -1,0 +1,63 @@
+@import "./assets/css/mixins.scss";
+@import "./assets/css/common.scss";
+.y-timeline {
+  position: relative;
+  &:before {
+    @include pseudoClass(#{'1PX'}, 100%, 0, 0, #EBEBEB);
+    z-index: 2;
+  }
+  .timeline-item {
+    position: relative;
+    padding-bottom: 50px;
+    &-head {
+      position: relative;
+      padding-left: 30px;
+      display: flex;
+      align-items: center;
+      color: #000;
+      &:before {
+        @include pseudoClass(10px, 10px, 50%, -5px, #ccc);
+        border-radius: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+      }
+      .custom {
+        flex: 1;
+      }
+      .title {
+        flex: 1;
+        margin: 0 15px;
+      }
+      .date {
+        color: #ccc;
+      }
+      .btn-list {
+        display: flex;
+        align-items: center;
+        .btn {
+          padding: 5px 15px;
+          color: #1890FF;
+          &.btn-action_delete {
+            color: #f56c6c;
+          }
+        }
+      }
+    }
+    &:first-child {
+      &:before {
+        @include pseudoClass(#{'1PX'}, 20px, 0, 0, #fff);
+        z-index: 5;
+      }
+    }
+    &:last-child {
+      &:before {
+        @include pseudoClass(#{'1PX'}, 100%, 20px, 0, #fff);
+        z-index: 5;
+      }
+    }
+    &-body {
+      padding-left: 30px;
+      line-height: 1.5;
+    }
+  }
+}
